@@ -16,6 +16,9 @@ def test_first_char(tracker,split_array)
     else
       results = multi_char(tracker,split_array)
     end
+  elsif char == " "
+    results[:converted_character] = char
+    results[:completed_characters] = 1
   else
     results[:failure] = "Failure on #{char}"
   end
