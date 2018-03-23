@@ -12,7 +12,6 @@ def test_first_char(tracker,split_array)
     if single_conversion.key?(char) && char != "n"
       results[:converted_character] = single_conversion[char]
       results[:completed_characters] = 1
-      puts results
     else
       results = multi_char(tracker,split_array)
     end
